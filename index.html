@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet Master</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link
+            rel="preconnect"
+            href="https://fonts.bunny.net"/>
+    <link
+            href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap"
+            rel="stylesheet"/>
+</head>
+<body class="space-y-16">
+
+<!--For Lg:screen-->
+<header class="flex items-center justify-evenly p-4 space-x-4 shadow-lg">
+    <div class="flex items-center space-x-4">
+        <img class="w-8" src="assets/w-m-final.svg" alt="wallet master logo">
+        <h1 class="font-bold text-xl">Wallet Master</h1>
+    </div>
+    <div>
+        <ul class="flex items-center space-x-8">
+            <li class="space-x-2 hover:text-teal-600">
+                <a href="#">How it works!</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+            <li class="space-x-2 hover:text-teal-600">
+                <a href="#">Resources</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+            <li class="hover:text-teal-600">
+                <a href="#">Support</a>
+            </li>
+            <li class="space-x-2">
+                <button class="text-blue-500 bg-blue-50 px-4 py-2 rounded-full">
+                    For Business
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="flex space-x-4">
+        <button class="text-teal-500 border-2 border-teal-500 hover:bg-teal-500 hover:text-white px-4 py-2 rounded-full">
+            Log in
+        </button>
+        <button class="text-white bg-teal-500 px-4 py-2 rounded-full hover:bg-teal-600">
+            Sign up
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="grid grid-cols-2">
+        <div class="flex flex-col justify-center items-center space-y-6">
+            <img class="w-24" src="assets/w-m-final.svg" alt="wallet master logo">
+            <h1 class="font-bold text-6xl">All Finances <br> In One Place.</h1>
+
+            <div class="flex space-x-4">
+                <div class="mt-6 bg-black rounded-xl text-white flex space-x-6 px-4 py-2 items-center space-y-2">
+                    <i class="fa-brands fa-2xl fa-google-play"></i>
+                    <div>
+                        <p>GET IT ON</p>
+                        <h1 class="font-bold text-2xl">Google Play</h1>
+                    </div>
+                </div>
+                <div class="mt-6 bg-black rounded-xl text-white flex space-x-6 px-4 py-2 items-center space-y-2">
+                    <i class="fa-brands fa-2xl fa-apple"></i>
+                    <div>
+                        <p>Download on the</p>
+                        <h1 class="font-bold text-2xl">App Store</h1>
+                    </div>
+                </div>
+            </div>
+
+            <button class="shadow-lg border border-gray-300 font-medium rounded-lg px-6 py-2">Try Web App <i
+                    class="fa-solid ms-2 fa-chevron-right"></i></button>
+        </div>
+        <div class="mb-10">
+            <img class="max-h-fit object-cover rounded-xl" src="assets/wallet-app.png" alt="wallet master app">
+        </div>
+
+    </section>
+</main>
+
+
+<script
+        src="https://kit.fontawesome.com/59539ec33f.js"
+        crossorigin="anonymous">
+</script>
+</body>
+</html>
