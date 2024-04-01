@@ -7,3 +7,12 @@ tailwind.config = {
         },
     },
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileDropdownMenu = document.getElementById("mobileDropdownMenu");
+
+    mobileMenuBtn.addEventListener("click", function () {
+        mobileDropdownMenu.classList.toggle("hidden");
+    });
+});

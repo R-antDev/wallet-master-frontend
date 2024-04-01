@@ -15,15 +15,17 @@
             rel="stylesheet"/>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
-<body class="space-y-10 bg-[#E3E8F4]">
+<body class="space-y-6 lg:space-y-10 bg-[#E3E8F4]">
 
 <!--For Lg:screen-->
-<header class="flex items-center bg-white justify-evenly p-4 space-x-4 shadow-lg">
+<header class="flex items-center bg-white justify-between lg:justify-evenly p-4 space-x-4 shadow-lg">
     <div class="flex items-center space-x-4">
-        <img class="w-8" src="assets/w-2.svg" alt="wallet master logo">
-        <h1 class="font-bold text-xl">Wallet Master</h1>
+        <img class="w-12 lg:w-8" src="assets/w-2.svg" alt="wallet master logo">
+        <h1 class="font-bold lg:text-xl text-2xl">Wallet Master</h1>
     </div>
-    <div>
+
+
+    <div class="hidden lg:block">
         <ul class="flex items-center space-x-8">
             <li class="space-x-2 hover:text-teal-600">
                 <a href="#">How it works!</a>
@@ -43,21 +45,46 @@
             </li>
         </ul>
     </div>
-    <div class="flex space-x-4">
+    <div class="flex items-center space-x-8">
         <button class="text-teal-500 border-2 border-teal-500 hover:bg-teal-500 hover:text-white px-4 py-2 rounded-full">
             Log in
         </button>
         <button class="text-white bg-teal-500 px-4 py-2 rounded-full hover:bg-teal-600">
             Sign up
         </button>
+        <div class="lg:hidden">
+            <button id="mobileMenuBtn">
+                <i class="fa-solid fa-2xl text-gray-800 me-5 fa-bars"></i>
+            </button>
+            <ul
+                    id="mobileDropdownMenu"
+                    class="hidden absolute right-3 w-fit mt-2 p-4 space-y-4 bg-white rounded-lg">
+                <li class="space-x-2 hover:text-teal-600">
+                    <a href="#">How it works!</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+                <li class="space-x-2 hover:text-teal-600">
+                    <a href="#">Resources</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+                <li class="hover:text-teal-600">
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <button class="text-blue-500 bg-blue-50 px-4 py-2 rounded-full">
+                        For Business
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 </header>
 
 <main>
-    <section class="grid grid-cols-2">
-        <div class="flex flex-col justify-center items-center space-y-10">
-            <img class="w-20" src="assets/w-2.svg" alt="wallet master logo">
-            <h1 class="font-bold text-6xl">All Finances <br> In One Place.</h1>
+    <section class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex lg:flex-col justify-around lg:justify-center items-center lg:space-y-10 space-y-4 space-x-6 p-6 lg:p-0">
+            <img class="w-20 object-cover" src="assets/w-2.svg" alt="wallet master logo">
+            <h1 class="font-bold text-3xl lg:text-6xl">All Finances <br> In One Place.</h1>
             <div class="flex space-x-4">
                 <div class="bg-black rounded-xl text-white flex space-x-4 justify-center items-center space-y-2 px-4 py-2 cursor-pointer">
                     <i class="fa-brands fa-xl fa-google-play"></i>
@@ -75,12 +102,12 @@
                 </div>
             </div>
 
-            <button class="shadow-lg bg-white border border-gray-300 hover:bg-teal-600 hover:text-white font-medium rounded-lg px-6 py-2 text-lg ">
+            <button class="hidden lg:block shadow-lg bg-white border border-gray-300 hover:bg-teal-600 hover:text-white font-medium rounded-lg px-6 py-2 text-lg ">
                 Try Web App <i
                     class="fa-solid ms-2 fa-chevron-right"></i></button>
         </div>
         <div class="rounded-xl">
-            <img class="max-h-fit object-cover" src="assets/wallet-app.png" alt="wallet master app">
+            <img class="lg:max-h-fit mx-auto object-cover" src="assets/wallet-app.png" alt="wallet master app">
         </div>
     </section>
     <section class="bg-white flex justify-center items-center space-x-20 p-10">
@@ -114,44 +141,44 @@
         </div>
     </section>
 
-    <section class="p-10 space-y-10 bg-white ">
+    <section class="lg:p-10 p-6 space-y-10 bg-white ">
         <h1 class="text-4xl font-bold text-center">Use Cases</h1>
-        <div class="flex justify-evenly items-center space-x-10">
-            <div class="bg-gradient-to-r from-cyan-500 to-blue-500 space-y-2 text-white rounded-xl p-10">
+        <div class="flex justify-evenly items-center lg:space-x-10 space-x-4">
+            <div class="bg-gradient-to-r from-cyan-500 to-blue-500 space-y-2 text-white rounded-xl p-6 lg:p-10">
                 <h1 class="text-2xl font-bold">Budgeting</h1>
                 <p class="text-lg"> Set unlimited budgets, track your spending, and see where you're spending your
                     money. </p>
             </div>
-            <div class="bg-gradient-to-r from-orange-500 to-red-500 space-y-2 text-white rounded-xl p-10">
+            <div class="bg-gradient-to-r from-orange-500 to-red-500 space-y-2 text-white rounded-xl p-6 lg:p-10">
                 <h1 class="text-2xl font-bold">Expense Control</h1>
-                <p class="text-lg"> See every transaction, set alerts, and see where you're spending your money. </p>
+                <p class="text-lg"> See every transaction, set alerts, and see where you're spending money. </p>
             </div>
-            <div class="bg-gradient-to-r from-green-500 to-green-700 space-y-2 text-white rounded-xl p-10">
+            <div class="bg-gradient-to-r from-green-500 to-green-700 space-y-2 text-white rounded-xl p-6 lg:p-10">
                 <h1 class="text-2xl font-bold">Planning</h1>
                 <p class="text-lg"> Go ahead of the curve. Automated upcoming payment notifications </p>
             </div>
         </div>
     </section>
 
-    <section class="p-10 space-y-10 bg-white ">
+    <section class="p-10 space-y-10 bg-white">
         <h1 class="text-4xl font-bold text-center">Why Wallet?</h1>
-        <div class="flex justify-evenly items-center space-x-10">
+        <div class="flex justify-around items-center space-x-4 lg:space-x-10">
             <div class=" space-y-6 rounded-xl p-6 border-2 border-teal-500">
                 <img class="w-48 rounded-xl border-2 mx-auto object-cover" src="assets/why-wallet-1.png" alt="">
                 <h1 class="text-2xl font-bold text-center">Advanced</h1>
-                <p class="text-md w-64"> Wallet is simply smarter. We combine best in breed Ai driven technologies to
+                <p class="text-md lg:w-64"> Wallet is simply smarter. We combine best in breed Ai driven technologies to
                     help you manage your money quickly and efficiently. </p>
             </div>
             <div class=" space-y-6 rounded-xl p-6 border-2 border-purple-500">
                 <img class="w-48 rounded-xl mx-auto border-2 object-cover" src="assets/why-wallet-3.png" alt="">
                 <h1 class="text-2xl font-bold text-center">User Driven</h1>
-                <p class="text-md w-64"> Wallet isn’t a “system.” You drive your own decision-making process. Wallet
+                <p class="text-md lg:w-64"> Wallet isn’t a “system.” You drive your own decision-making process. Wallet
                     learns from the user to provide the data you need most. </p>
             </div>
             <div class=" space-y-6 rounded-xl p-6 border-2 border-lime-500">
                 <img class="w-48 rounded-xl mx-auto border-2 object-cover" src="assets/why-wallet-2.png" alt="">
                 <h1 class="text-2xl font-bold text-center">Private</h1>
-                <p class="text-md w-64"> Wallet Master does not sell customer data to 3rd parties. Your data is yours.
+                <p class="text-md lg:w-64"> Wallet Master does not sell customer data to 3rd parties. Your data is yours.
                     Our mission is to help you use it to lead a richer life. </p>
             </div>
         </div>
@@ -177,7 +204,7 @@
         </div>
     </section>
 
-    <section class="bg-white p-10 space-y-10">
+    <section class="bg-white lg:p-10 p-6 space-y-10">
         <h1 class="text-4xl font-bold text-center">Wallet Helps You:</h1>
         <div class="flex justify-evenly items-center space-x-10">
             <div class="bg-red-200 rounded-xl p-10 shadow-lg space-y-4 w-80">
