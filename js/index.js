@@ -16,3 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileDropdownMenu.classList.toggle("hidden");
     });
 });
+
+
+function acceptAllCookies() {
+    let cookieSection = document.getElementById("cookieSection");
+    // cookieSection.classList.add("hidden");
+    cookieSection.style.display = 'none';
+}
