@@ -323,21 +323,32 @@
             </h6>
             <div class="grid grid-cols-3 items-center space-x-4 text-2xl">
                 <p class="col-span-2 text-sm">
-                    We use cookies on our website to give you the most relevant experience by remembering your preferences
-                    and repeat visits. By clicking “Accept All”, you consent to the use of ALL the cookies. However, you may
+                    We use cookies on our website to give you the most relevant experience by remembering your
+                    preferences
+                    and repeat visits. By clicking “Accept All”, you consent to the use of ALL the cookies. However, you
+                    may
                     visit "Cookie Settings" to provide a controlled consent.
                 </p>
                 <div class="flex justify-end space-x-2">
                     <button class="bg-gray-500 text-white p-2 lg:text-xs text-sm rounded-lg">Cookie Settings</button>
-                    <button onclick="acceptAllCookies()" class="bg-green-500 text-white lg:text-xs text-sm p-2 rounded-lg">Accept All</button>
+                    <button onclick="acceptAllCookies()"
+                            class="bg-green-500 text-white lg:text-xs text-sm p-2 rounded-lg">Accept All
+                    </button>
                 </div>
             </div>
         </section>
 
-        <div class="hidden overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center z-50" id="overlay">
-            <span onclick="closePopup()" class="close-btn absolute top-4 right-4 text-white text-2xl cursor-pointer">&times;</span>
-            <img src="assets/popup.png" alt="Pop-up Image" class="cursor-pointer popup-img max-w-4/5 max-h-4/5">
+        <div class="hidden overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center z-50"
+             id="overlay">
+            <div class="relative">
+                <img src="assets/popup.png" alt="Pop-up Image" class="cursor-pointer popup-img max-w-4/5 max-h-4/5">
+                <span onclick="closePopup()"
+                      class="close-btn absolute top-0 right-0 -mt-4 -mr-4 text-4xl cursor-pointer">
+            <i class="fa-solid fa-xl text-rose-400 fa-circle-xmark"></i>
+                </span>
+            </div>
         </div>
+
 
         <p class="text-sm text-center">
             Copyright © 2024 Wallet Master | All rights reserved | <a class="text-blue-500" href="#">Privacy Policy</a>
