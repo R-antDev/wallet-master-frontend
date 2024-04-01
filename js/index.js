@@ -23,3 +23,13 @@ function acceptAllCookies() {
     // cookieSection.classList.add("hidden");
     cookieSection.style.display = 'none';
 }
+
+window.onload = function() {
+    let overlay = document.getElementById('overlay');
+    overlay.style.display = 'flex';
+};
+
+function closePopup() {
+    let overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+}
