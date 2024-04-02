@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Wallet Master</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/index.js"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="css/output.css" rel="stylesheet">
     <link
             rel="preconnect"
             href="https://fonts.bunny.net"/>
@@ -14,9 +13,12 @@
             href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap"
             rel="stylesheet"/>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="js/anime.min.js"></script>
 </head>
 <body class="font-figtree w-full bg-[#E3E8F4]">
-<div class="hidden overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center z-50 "
+
+<!--popup-->
+<div class="hidden overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 justify-center items-center z-50 "
      id="overlay">
     <div class="relative">
         <img src="assets/popup.png" alt="Pop-up Image" class="cursor-pointer popup-img max-w-4/5 max-h-4/5">
@@ -30,7 +32,7 @@
 <!--For Lg:screen-->
 <header class="flex items-center justify-between bg-white lg:justify-evenly p-8 lg:p-6 space-x-4 shadow-lg">
     <div class="flex items-center space-x-6">
-        <img class="lg:w-12 w-20 lg:w-8" src="assets/w-2.svg" alt="wallet master logo">
+        <img class="lg:w-12 w-20" src="assets/w-2.svg" alt="wallet master logo">
         <h1 class="font-bold lg:text-xl text-4xl">Wallet Master</h1>
     </div>
 
@@ -92,7 +94,7 @@
 
 <main>
     <section class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="flex lg:flex-col justify-around lg:justify-center items-center lg:space-y-10 space-y-4 space-x-4 p-4 lg:p-0">
+        <div class="flex lg:flex-col justify-around lg:justify-center items-center lg:space-y-10 space-y-4 space-x-4 p-4 lg:p-0 ">
             <img class="w-20 object-cover" src="assets/w-2.svg" alt="wallet master logo">
             <h1 class="font-bold text-4xl lg:text-6xl">All Finances <br> In One Place.</h1>
             <div class="flex space-x-4">
@@ -115,19 +117,15 @@
             <button class="hidden lg:block shadow-lg bg-white border border-gray-300 hover:bg-teal-600 hover:text-white font-medium rounded-lg px-6 py-2 text-lg hover:animate-bounce">
                 Try Web App <i class="fa-solid ms-2 fa-chevron-right"></i>
             </button>
-
-            <!--            <button class="hidden lg:block shadow-lg bg-white border border-gray-300 hover:bg-teal-600 hover:text-white font-medium rounded-lg px-6 py-2 text-lg ">-->
-            <!--                Try Web App <i-->
-            <!--                    class="fa-solid ms-2 fa-chevron-right"></i></button>-->
         </div>
         <div class="p-10">
-            <img class="lg:max-h-fit rounded-xl mx-auto object-cover" src="assets/wallet-app.png"
+            <img class="lg:max-h-fit rounded-xl mx-auto object-cover animate-shake animate-once animate-delay-500 animate-ease-out animate-reverse" src="assets/wallet-app.png"
                  alt="wallet master app">
         </div>
     </section>
     <section class="bg-white flex justify-center items-center space-x-10 lg:space-x-20 p-10">
         <div class="space-y-4">
-            <h1 class="text-5xl font-bold">6.6 M</h1>
+            <h1 id="downloadStats" class="text-5xl font-bold">6.6 M</h1>
             <p class="lg:text-lg text-xl font-bold">
                 <i class="fa-solid me-2 fa-cloud-arrow-down"></i>
                 Downloads
@@ -367,5 +365,6 @@
         src="https://kit.fontawesome.com/59539ec33f.js"
         crossorigin="anonymous">
 </script>
+<script src="js/index.js"></script>
 </body>
 </html>
