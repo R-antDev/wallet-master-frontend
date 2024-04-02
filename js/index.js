@@ -37,16 +37,63 @@ function closePopup() {
 }
 
 // Download stats
-// let downloadStats = document.getElementById('downloadStats')
-// let downloads = {
-//     count: '0 M'
-// }
-// anime({
-//     targets: downloads,
-//     count: '6 M',
-//     easing: 'linear',
-//     round: 1,
-//     update: function () {
-//         downloadStats.innerHTML = downloads.count
-//     }
-// })
+
+function allStats() {
+    let downloadStats = document.getElementById('downloadStats')
+    let ratingStats = document.getElementById('ratingStats')
+    let languageStats = document.getElementById('languageStats')
+    let banksStats = document.getElementById('banksStats')
+
+    let counter = {
+        download: '0 M',
+        rating: 0,
+        language: '0+',
+        banks: '0 K'
+    }
+    anime({
+        targets: counter,
+        download: '6 M',
+        rating: 4,
+        language: '20+',
+        banks: '15 K',
+        easing: 'linear',
+        round: 1,
+        update: function () {
+            downloadStats.innerHTML = counter.download
+            ratingStats.innerHTML = counter.rating
+            languageStats.innerHTML = counter.language
+            banksStats.innerHTML = counter.banks
+        }
+    })
+}
+
+// Get the container element
+const animationContainer = document.getElementById('animationContainer');
+
+animationContainer.addEventListener('wheel', function() {
+    anime({
+        targets: '#budgeting',
+        translateX: [
+            { value: -100, duration: 500, easing: 'easeInOutQuad' },
+            { value: 0, duration: 500, easing: 'easeInOutQuad' }
+        ]
+    });
+
+    anime({
+        targets: '#expense-control',
+        translateX: [
+            { value: -100, duration: 500, easing: 'easeInOutQuad' },
+            { value: 0, duration: 500, easing: 'easeInOutQuad' }
+        ],
+        delay: 100
+    });
+
+    anime({
+        targets: '#planning',
+        translateX: [
+            { value: -100, duration: 500, easing: 'easeInOutQuad' },
+            { value: 0, duration: 500, easing: 'easeInOutQuad' }
+        ],
+        delay: 200
+    });
+});
