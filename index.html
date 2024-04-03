@@ -156,46 +156,45 @@
 
     <section class="lg:p-10 p-6 space-y-10 bg-white ">
         <h1 class="text-4xl font-bold text-center">Use Cases</h1>
-        <div class="flex justify-center items-center lg:space-x-10 space-x-4" id="animationContainer">
-            <div id="budgeting" class="hidden lg:block bg-gradient-to-r from-cyan-500 to-blue-500 space-y-2 text-white rounded-xl p-6 lg:p-10">
+        <div class="flex flex-col lg:flex-row justify-center items-center lg:space-y-0 space-y-4 lg:space-x-10 space-x-4" id="animationContainer">
+            <div id="budgeting" class="hidden lg:block bg-gradient-to-r from-cyan-500 to-blue-500 space-y-2 text-white rounded-xl p-6 lg:p-10 w-full">
                 <h1 class="text-2xl font-bold">Budgeting</h1>
                 <p class="text-lg"> Set unlimited budgets, track your spending, and see where you're spending your
                     money. </p>
             </div>
-            <div id="expense-control" class="bg-gradient-to-r from-orange-500 to-red-500 space-y-2 text-white rounded-xl p-6 lg:p-10">
+            <div id="expense-control" class="bg-gradient-to-r from-orange-500 to-red-500 space-y-2 text-white rounded-xl p-6 lg:p-10 w-full">
                 <h1 class="text-2xl font-bold">Expense Control</h1>
-                <p class="text-lg"> See every transaction, set alerts, and see where you're spending money. </p>
+                <p class="lg:text-lg text-xl"> See every transaction, set alerts, and see where you're spending money. </p>
             </div>
-            <div id="planning" class="bg-gradient-to-r from-green-500 to-green-700 space-y-2 text-white rounded-xl p-6 lg:p-10">
+            <div id="planning" class="bg-gradient-to-r from-green-500 to-green-700 space-y-2 text-white rounded-xl p-6 lg:p-10 w-full">
                 <h1 class="text-2xl font-bold">Planning</h1>
-                <p class="text-lg"> Go ahead of the curve. Automated upcoming payment notifications </p>
+                <p class="lg:text-lg text-xl"> Go ahead of the curve. Automated upcoming payment notifications </p>
             </div>
         </div>
     </section>
 
     <section class="p-10 space-y-10 bg-white">
         <h1 class="text-4xl font-bold text-center">Why Wallet?</h1>
-        <div class="flex justify-center items-center space-x-4 lg:space-x-10">
-            <div class=" hidden lg:block space-y-6 rounded-xl p-6 border-2 border-teal-500">
+        <div class="flex flex-col lg:flex-row justify-center items-center space-x-4 space-y-4 lg:space-y-0 lg:space-x-10">
+            <div class=" hidden lg:block space-y-6 rounded-xl  p-6 border-2 border-teal-500">
                 <img class="w-48 rounded-xl border-2 mx-auto object-cover" src="assets/why-wallet-1.png" alt="">
                 <h1 class="text-3xl lg:text-2xl font-bold text-center">Advanced</h1>
-                <p class="lg:text-md text:xl lg:w-64"> Wallet is simply smarter. We combine best in breed Ai driven
+                <p class="text-xl lg:w-64"> Wallet is simply smarter and better. We combine best in breed Ai driven
                     technologies to
                     help you manage your money quickly and efficiently. </p>
             </div>
-            <div class=" space-y-6 rounded-xl p-6 border-2 border-purple-500">
+            <div class=" space-y-6 rounded-xl  p-6 border-2 border-purple-500">
                 <img class="w-48 rounded-xl mx-auto border-2 object-cover" src="assets/why-wallet-3.png" alt="">
                 <h1 class="text-3xl lg:text-2xl font-bold text-center">User Driven</h1>
-                <p class="lg:text-md text:xl lg:w-64"> Wallet isn’t a “system.” You drive your own decision-making
+                <p class="text-xl lg:w-64"> Wallet isn’t a “system.” You drive your own decision-making
                     process. Wallet
                     learns from the user to provide the data you need most. </p>
             </div>
-            <div class=" space-y-6 rounded-xl p-6 border-2 border-lime-500">
+            <div class=" space-y-6 rounded-xl  p-6 border-2 border-lime-500">
                 <img class="w-48 rounded-xl mx-auto border-2 object-cover" src="assets/why-wallet-2.png" alt="">
                 <h1 class="text-3xl lg:text-2xl font-bold text-center">Private</h1>
-                <p class="lg:text-md text:xl lg:w-64"> Wallet Master does not sell customer data to 3rd parties. Your
-                    data is
-                    yours. Our mission is to help you use it to lead a richer life. </p>
+                <p class="text-xl lg:w-64"> Wallet Master does not sell customer data to 3rd parties or share it with third parties. Your
+                    data is yours. Our mission is to help you use it to lead a richer life. </p>
             </div>
         </div>
     </section>
@@ -295,7 +294,7 @@
             </div>
         </div>
     </section>
-    <footer class="bg-white py-10 space-y-10">
+    <footer class="bg-white py-10 space-y-10 relative">
         <div class="flex justify-center items-center space-x-4 text-2xl">
             <a href=""
             ><i
@@ -331,7 +330,14 @@
             </div>
         </div>
 
-        <section id="cookieSection" class="bg-[#E3E8F4] p-10">
+
+
+        <p class="lg:text-sm text-lg text-center">
+            Copyright © 2024 Wallet Master | All rights reserved | <a class="text-blue-500" href="#">Privacy Policy</a>
+            | <a class="text-blue-500" href="#">Terms of Service</a>
+        </p>
+
+        <section id="cookieSection" class="absolute bottom-0 bg-[#E3E8F4] p-10 ">
             <h6 class="text-lg">
                 Cookies give you a personalised experience
             </h6>
@@ -351,12 +357,6 @@
                 </div>
             </div>
         </section>
-
-
-        <p class="lg:text-sm text-lg text-center">
-            Copyright © 2024 Wallet Master | All rights reserved | <a class="text-blue-500" href="#">Privacy Policy</a>
-            | <a class="text-blue-500" href="#">Terms of Service</a>
-        </p>
 
     </footer>
 
